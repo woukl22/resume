@@ -36,35 +36,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     value: 4,
                     itemStyle: {
-                        color: '#FF6B6B',
+                        color: '#3690c0',
                         borderRadius: 4,
                     },
                 },
                 {
                     value: 3,
                     itemStyle: {
-                        color: '#4CAF50',
+                        color: '#67a9cf',
                         borderRadius: 4,
                     },
                 },
                 {
                     value: 3,
                     itemStyle: {
-                        color: '#4CAF50',
+                        color: '#67a9cf',
                         borderRadius: 4,
                     },
                 },
                 {
                     value: 3,
                     itemStyle: {
-                        color: '#4CAF50',
+                        color: '#67a9cf',
                         borderRadius: 4,
                     },
                 },
                 {
                     value: 2,
                     itemStyle: {
-                        color: '#4CAF50',
+                        color: '#a6bddb',
                         borderRadius: 4,
                     },
                 },
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 show: false
             },
             data: [
-                { value: 100, name: '100%', itemStyle: { borderRadius: 4 } }
+                { value: 100, name: '100%', itemStyle: { borderRadius: 4, color: '#3690c0' } }
             ]
         }]
     };
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 show: false
             },
             data: [
-                { value: 60, name: '60%', itemStyle: { borderRadius: 4 } },
+                { value: 60, name: '60%', itemStyle: { borderRadius: 4, color: '#67a9cf' } },
                 { value: 40, name: '40%', itemStyle: { color: '#F8FAFC'} }
             ]
         }]
