@@ -51,14 +51,14 @@
                 </div>
             </div>
             <!-- 하단 2/3 -->
-            <div class="w-full h-[70%] mt-[1rem] flex flex-row">
+            <div class="w-full h-[70%] mt-[0.7rem] flex flex-row">
                 <!-- 왼쪽 2/3 -->
                 <div class="h-full w-[60%] flex flex-col p-[1rem]">
                     <!-- 시계열 -->
                     <div class="h-[40%] w-full">
                         <div class="h-[1.5rem] w-full flex flex-row">
                             <div class="h-full w-[35%] font-bold text-gray-800">
-                                Experience Timeline
+                                EXPERIENCE TIMELINE
                             </div>
                             <div class="h-full w-[65%] flex flex-row justify-end items-center">
                                 <div class="h-[60%] flex items-center mr-[0.5rem]">
@@ -81,7 +81,7 @@
                               
                               <!-- 2023 -->
                               <text x="-260" y="360" font-size="35" fill="#4a4a4a">2023</text>
-                              <rect id="taiwan" x="50" y="140" width="110" height="150" fill="#d7301f" rx="25" opacity="0.7" />
+                              <rect id="taiwan" x="50" y="140" width="60" height="150" fill="#d7301f" rx="25" opacity="0.7" />
                               <rect id="tedi" x="-220" y="220" width="300" height="70" fill="#fee08b" rx="25" opacity="0.9" />
                               <rect id="todayart" x="260" y="220" width="240" height="70" fill="#fee08b" rx="25" opacity="0.9" />
                               
@@ -111,7 +111,7 @@
                             Ajou University
                         </div>
                         <div class="text-[13px] font-light text-gray-700">
-                            Double major in <span class="font-medium">Digital Media</span> and <span class="font-medium">Applied Artificial Intelligence</span>
+                            Double major in <span class="font-medium text-[#ff7f00]">Digital Media</span> and <span class="font-medium text-[#ff7f00]">Applied Artificial Intelligence</span>
                         </div>
                         <div class="text-[12px] text-gray-400">
                             Mar.2019 - Present
@@ -127,7 +127,7 @@
                             Using Similarity-Based Circular Visualization
                         </div>
                         <div class="text-[13px] text-gray-700 font-light">
-                            Jaeuk Lee, Jisu Kim, Hyunwoo Han, Kyungwon Lee
+                            <span class="font-[400]">Jaeuk Lee</span>, Jisu Kim, Hyunwoo Han, Kyungwon Lee
                         </div>
                         <div class="text-[12px] text-gray-400 font-light">
                             2024, The 14th IEEE Symposium on Large Data Analysis and Visualization, Poster
@@ -137,11 +137,11 @@
                 <!-- 오른쪽 1/3 -->
                 <div class="h-full w-[40%] flex flex-col p-[1rem]">
                     <!-- 스킬 -->
-                    <div class="h-[58%] w-full">
+                    <div class="h-[58%] w-full relative">
                         <div class="h-[1.5rem] w-full font-bold text-gray-800">
                             SKILLS
                         </div>
-                        <div class="graph h-full w-full" id="skills"></div>
+                        <div class="graph h-full w-full absolute top-[1rem]" id="skills"></div>
                     </div>
                     <!-- Language -->
                     <div class="h-[40%] w-full bg-slate-50">
@@ -171,13 +171,62 @@
                 </div>
             </div>
             <div id="modal" class="hidden absolute top-0 right-0 w-[400px] h-full bg-white shadow-lg z-20 rounded-lg">
-                <div class="w-full h-[10%] flex flex-row mt-[1rem] ml-[1rem]">
-                    <h2 class="w-[80%] text-md font-bold p-4">Additional Activities</h2>
-                    <button id="close-modal" class="w-[20%] mr-[3.5rem] ml-4 mb-4 pb-[0.4rem] text-xl justify-end items-end flex text-red-500">×</button>
+                <div class="w-full h-[3rem] flex flex-row mt-[1rem] ml-[1.5rem] mb-[0.5rem]">
+                    <h2 class="w-[80%] text-md font-bold p-4">Additional Information</h2>
+                    <button id="close-modal" class="w-[20%] mr-[4rem] ml-4 pb-[0.4rem] text-xl justify-end items-end flex text-red-500">×</button>
                 </div>
-                <div class="overflow-scroll w-full h-[87%] pl-[2rem]">
+                <div class="overflow-scroll w-full h-[87%] pl-[2.5rem] pr-[3rem]">
                     <div class="w-full h-full">
-                        
+                        <div class="w-full h-[5rem] mb-[0.8rem]">
+                            <div class="w-full h-[1.5rem] font-bold text-gray-800 mb-[0.1rem]">
+                                LICENSE
+                            </div>
+                            <div class="w-full h-[3.5rem]">
+                                <p class="text-sm font-semibold text-gray-700">SQLD(SQL-Developer)</p>
+                                <p class="text-xs text-gray-600">Korea Data Agency, 2024.06.21</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-[12rem] mb-[3rem]">
+                            <div class="w-full h-[1.5rem] font-bold text-gray-800 mb-[0.1rem]">
+                                CLUB ACTIVITIES
+                            </div>
+                            <div class="w-full h-full">
+                                <div class="w-full mb-[1rem] flex flex-row">
+                                    <div class="aspect-square w-[15%] flex justify-center items-center mr-[1rem]">
+                                        <div class="h-[2rem] w-[2rem] bg-center bg-cover" style="background-image: url('./laptop.png');"></div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <p class="text-sm font-semibold text-gray-700">IT Club: 9oormthon Univ</p>
+                                        <p class="text-xs text-gray-600">Front-end part</p>
+                                        <p class="text-xs text-gray-500">2024.08 - present</p>
+                                    </div>
+                                </div>
+                                <div class="w-full mb-[1rem] flex flex-row">
+                                    <div class="aspect-square w-[15%] flex justify-center items-center mr-[1rem]">
+                                        <div class="h-[2rem] w-[2rem] bg-center bg-cover" style="background-image: url('./book.png');"></div>
+                                    </div>
+                                    <div class="flex flex-col justify-center">
+                                        <p class="text-sm font-semibold text-gray-700">Book Club: Writings and People</p>
+                                        <p class="text-xs text-gray-500">2023.01 - 2023.12</p>
+                                    </div>
+                                </div>
+                                <div class="w-full mb-[1rem] flex flex-row">
+                                    <div class="aspect-square w-[15%] flex justify-center items-center mr-[1rem]">
+                                        <div class="h-[2rem] w-[2rem] bg-center bg-cover" style="background-image: url('./soccer.png');"></div>
+                                    </div>
+                                    <div class="flex flex-col justify-center">
+                                        <p class="text-sm font-semibold text-gray-700">Soccer Club: FC MEDIA</p>
+                                        <p class="text-xs text-gray-600">Club president (2020)</p>
+                                        <p class="text-xs text-gray-500">2019.03 - present</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="w-full h-[1.5rem] font-bold text-gray-800 mb-[0.1rem]">
+                            GPA
+                        </div>
+                        <div id="gpa" class="graph w-[20rem] h-[10rem]"></div>
                     </div>
                 </div>
             </div>

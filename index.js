@@ -7,9 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
     option = {
         grid: {
-            left: '20%',
-            right: '10%',
+            left: '17%',
+            right: '-12%',
             top: '10%',
+            bottom: '27%',
             },
         xAxis: {
             type: 'value',
@@ -17,12 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 show: false
             },
             splitLine: {
-                show: false,
+                show: true,
             },
+            axisLine: {
+                show: false,
+            }
         },
         yAxis: {
             type: 'category',
-            data: ['Python', 'Javascript', 'HTML', 'CSS', 'C'],
+            data: ['Python', 'Javascript', 'HTML', 'CSS', 'Illustrator'],
             inverse: true,
             axisLine: {
                 show: false,
@@ -68,14 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         borderRadius: 4,
                     },
                 },
+                6
             ],
             type: 'bar',
-            barWidth: '12px',
+            barWidth: '17px',
             label: {
                 show: false,
-                position: 'insideRight',
-                color: '#fff',
-                fontWeight: 'bold',
+                position: 'right',
+                color: '#666',
+                fontWeight: 'light',
             },        
         }]
     };
@@ -156,6 +161,54 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     option3 && myChart3.setOption(option3);
+
+    var chartDom4 = document.getElementById('gpa');
+    var myChart4 = echarts.init(chartDom4);
+    var option4;
+
+    option4 = {
+    title: {
+        text: '3.84',
+        color: '#d7301f'
+    },
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data: ['Cumulative', 'Major'],
+      },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '2%',
+        containLabel: true
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['1-1', '1-2', '2-1', '2-2', '3-1', '3-2']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name: 'Cumulative',
+            type: 'line',
+            color: '#d7301f',
+            data: [3.38, 3.68, 4.2, 4.08, 3.66, 4.08]
+        },
+        {
+            name: 'Major',
+            type: 'line',
+            color: '#737373',
+            data: [4.5, 3.79, 4, 4, 3.2, 3.88]
+        },
+    ]
+    };
+
+    option4 && myChart4.setOption(option4);
+
   });
 
 document.addEventListener('DOMContentLoaded', () => {
