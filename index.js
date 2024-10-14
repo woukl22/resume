@@ -154,8 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 show: false
             },
             data: [
-                { value: 60, name: '60%', itemStyle: { borderRadius: 4, color: '#67a9cf' } },
-                { value: 40, name: '40%', itemStyle: { color: '#F8FAFC'} }
+                { value: 65, name: '65%', itemStyle: { borderRadius: 4, color: '#67a9cf' } },
+                { value: 35, name: '35%', itemStyle: { color: '#F8FAFC'} }
             ]
         }]
     };
